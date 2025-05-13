@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to {{company_name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/emails/css/style.css">
+</head>
+<body>
+
+<div class="email-wrapper">
+    <div class="logo">
+        <img src="cid:logo" alt="{{company_name}} Logo">
+    </div>
+
+    <div class="title">Welcome, {{customer_name}}!</div>
+
+    <div class="message">
+        We're thrilled to have you at <strong>{{company_name}}</strong>!<br>
+        As a warm welcome, enjoy <strong>{{discount}}% OFF</strong> your first purchase.<br><br>
+        Click below to start shopping!
+    </div>
+
+    <div class="center">
+        <a href="{{shop_link}}" class="cta-button">Start Shopping</a>
+    </div>
+
+    <div class="support">
+        Questions? Reach out to us at
+        <a href="mailto:support@mycompany.com">support@mycompany.com</a>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 {{company_name}} &nbsp;|&nbsp;
+        <a href="{{unsubscribe_link}}" class="unsubscribe">Unsubscribe</a>
+    </div>
+</div>
+
+</body>
+</html>
